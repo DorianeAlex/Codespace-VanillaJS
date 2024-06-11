@@ -1,0 +1,16 @@
+// Write a JavaScript program to print the result of the following operations.
+// a. -5 + 8 * 6
+let resultA = -5 + 8 * 6;
+console.log(resultA); // Expected output: 43
+
+// b. (55 + 9) % 9
+let resultB = (55 + 9) % 9;
+console.log(resultB); // Expected output: 1
+
+// c. 20 + -3 * 5 / 8
+let resultC = 20 + -3 * 5 / 8;
+console.log(resultC); // Expected output: 18.125
+
+// d. 5 + 15 / 3 * 2 - 8 % 3
+let resultD = 5 + 15 / 3 * 2 - 8 % 3;
+console.log(resultD); // Expected output: 13
