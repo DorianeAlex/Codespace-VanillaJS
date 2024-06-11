@@ -1,0 +1,14 @@
+// Write a JavaScript program to divide two numbers, using the input from the user, and print the result on the screen.
+// Prompt the user to input the first number
+        let firstNumber = prompt("Input the first number:");
+// Prompt the user to input the second number
+        let secondNumber = prompt("Input the second number:");
+// Perform the division
+        let result = firstNumber / secondNumber;
+// Print the result
+console.log("The division of the first number and the second number is: " + result);
+
+// Expected Output :
+// Input the first number: 6
+// Input the second number: 2
+// The division of the first number and the second number is: 3
