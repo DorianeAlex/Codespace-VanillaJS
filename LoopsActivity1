@@ -1,0 +1,24 @@
+// Write a JavaScript program that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+
+// program to display numbers from 0 to 15
+// initialise the variable
+let i= 0;
+const n = 15;
+
+// while loop from i = 1 to 15
+//check if the current number is odd or even
+while (i <= n) {
+
+ if (i%2 === 0) { //message will be display if number can be divided by 2 and have a remainder of 0 which means it is even
+ console.log( i  + " is even");
+ } else {
+ console.log( i  + " is odd"); // if no even, message will be display to indicate it is an odd number-if number can't be divided by 2 and does not have a remainder of 0
+}
+i++; // increment the number by one after the while loop is run and stops when reaching 15
+}
+ 
+// Expected Output:
+
+// "0 is even"
+// "1 is odd"
+// "2 is even"
