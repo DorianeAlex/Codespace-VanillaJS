@@ -1,0 +1,23 @@
+// Write a JavaScript program to sum values of an array.
+// create an array
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+//create a variable for the sum and declare it
+let sum = 0;
+
+//create a loop to iterate each item in the array
+for (let i = 0; i < numbers.length; i++) { 
+ sum += numbers[i]; // sum = sum+numbers[i], each time i is added to sum and its value is increased by 1
+}
+
+ console.log ("The sum is " + sum + ".")
+
+// Test Data:
+
+// Sample Array:
+
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// Expected Output:
+
+// The sum is 55.
