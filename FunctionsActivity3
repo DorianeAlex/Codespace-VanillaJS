@@ -1,0 +1,28 @@
+// Write a JavaScript function that takes a number as a parameter and check the number is prime or not. 
+
+function primeNumber(n) {
+
+    if (n < 0 ) {
+        return "Only positive number accepted";
+        
+    } else if (n > 2) {
+
+        for (let i = 2; i < n; i++ ) {
+            if (n % i === 0) {
+        return "This is not a prime number"
+    }
+    
+}
+
+console.log ( n + " is a prime number")
+
+primeNumber (2);
+
+
+// Note: 
+
+// Prime numbers are the numbers that are only divisible by themselves and 1, in other words, if we try to divide them by another number, the result is not a whole number. 
+
+// So, if we divide the number by anything other than 1 or itself, we will get a remainder that is not zero. 
+
+// Negative numbers can not be prime.
