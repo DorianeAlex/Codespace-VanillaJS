@@ -1,0 +1,23 @@
+// Write a JavaScript function to calculate the factorial of a number (a non-negative integer n ). The function accepts the number as an argument.
+
+// create function where n represents the number to be factorised
+function factorial(n) {
+    
+  if (n < 0){ // condition to check if number is non-negative
+        return "Only positive number accepted"; // if negative, it will be rejected
+      
+  } else if (n == 0) // if equal to 0, result is 1
+      return (1);
+      
+ else { //if other number, function will go on with formula which will hits all the integers from 1 to that number and stops
+      return (n * factorial(n - 1)); // the function will exit with total value
+ }
+}
+factorial(6);
+
+// Note:
+// The factorial of a number is the product of all the integers from 1 to that number and it is represented by n!
+
+// For example, the factorial of 6! is 1*2*3*4*5*6 = 720. 
+
+// The factorial is not defined for negative numbers, and the factorial of zero is one, 0! = 1.
