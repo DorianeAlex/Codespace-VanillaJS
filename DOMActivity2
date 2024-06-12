@@ -1,0 +1,32 @@
+<!-- Write a JavaScript program to calculate the volume of a sphere. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 2 - Volume of a sphere</title>
+    </head> 
+    <body>
+    
+    <h2 id ='text'>Input radius value and get the volume of a sphere</h2>
+        <!-- creating input to enter value + button that will return the function created in the script section and result -->
+        Radius: <br><input id="radius"></br>
+        <br><button
+        onclick="volumeSphere()">Calculate</button></br>
+        Volume: <br><input id="volume"></br>
+
+        <!-- writing javascript program in script section with a function to calculate the volume -->
+    <script> 
+        function volumeSphere()
+ {
+// The formula for the volume of a sphere is (4/3) * pi * R³ function that takes radius printing the result with 3 digits after the decimal point
+// finding elements needed for calculation by Id
+  var radius = document.getElementById('radius').value; 
+  var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+  volume = volume.toFixed(3);
+  document.getElementById('volume').value = volume;
+
+
+ } 
+    </script>
+    </body>
+</html>
