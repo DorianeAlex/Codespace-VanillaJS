@@ -1,0 +1,21 @@
+//  Write a JavaScript program to create the multiplication table (from 1 to 10) of a number.
+// prompt to ask user to enter a number and convert a numeric string into number
+
+let number = parseInt(prompt ("Enter a number: "));
+//initialise the variable, stopping loop when reaching 10
+const n = 10; 
+
+//looping from i = 1 to n
+
+for (let i = 1 ; i <= n; i++ ) { // in each iteration, i is increased by 1
+  
+   let product = number * i; // multiplication to run with the loop
+ 
+ console.log(number + ' x ' + i + ' = ' + product);
+}
+
+// Expected Output:
+
+// Input a number: 6
+
+// 6 x 1 = 6 to 6 x 10 = 60
