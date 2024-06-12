@@ -1,0 +1,25 @@
+// Write 2 JavaScript functions to:show the array content, find the max value in the array.
+const numbers = [10, 2, 3, 4, 7];
+
+function content() {
+
+    console.log ("The content of the array is: [" + numbers + "]");
+}
+
+content()
+
+function maxValue() {
+    numbers.sort(function(a, b){return a-b});
+    let maxValue = numbers[numbers.length - 1];
+    console.log("The max value in the array is: " + maxValue);
+}
+
+maxValue()
+    
+// Sample Array : [10, 2, 3, 4, 7]
+
+// Expected Output :
+
+// The content of the array is: [10, 2, 3, 4, 7]
+
+// The max value in the array is: 10
