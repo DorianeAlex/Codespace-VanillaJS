@@ -1,0 +1,36 @@
+// Write a JavaScript program to calculate the average value of an array elements.
+
+// create array with given numbers
+const values = [20, 30, 25, 35, -16, 60, -100];
+
+// declaring one variable for positive numbers and one for negative
+let positiveNum = 0;
+let negativeNum = 0;
+
+//create a for loop to run through each item
+//condition to calculate the sum of all positive numbers and another for negative numbers
+
+for (let i = 0; i < values.length; i++) {
+    if (values[i] > 0) {
+  positiveNum += values[i];
+ } else {
+  negativeNum += values[i];
+ }
+
+ let sum = positiveNum + negativeNum; //get the sum of the previous results by adding them
+ let average = sum/values.length; //get the average of all numbers by dividing the total sum by the number of items in array
+
+ let result = average.toFixed(1); // rounding number to 1 decimal place using toFixed() method
+
+ console.log (result)
+}
+
+// Test Data:
+
+// Sample Array:
+
+// [20, 30, 25, 35, -16, 60, -100]
+
+// Expected Output:
+
+// Average value of the array elements is : 7.7.
