@@ -1,0 +1,19 @@
+/* Write a JavaScript program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, "All numbers are different" if all three numbers are different and "Neither all are equal or different" otherwise.
+Test Data:
+Input first number: 2
+Input second number: 3
+Input third number: 4
+Expected Output :
+All numbers are different.
+*/
+let number1 = prompt("Choose a number: "); // asking the user to input a number using a prompt and store it as number1
+let number2 = prompt("Choose another number: "); // asking the user to input a number using a prompt and store it as number2
+let number3 = prompt("Choose a third number: "); // asking the user to input a number using a prompt and store it as number3
+// checking the conditions with an if statement
+if (number1 == number2 && number2 == number3) { // checking if all 3 numbers are equal
+        console.log("All numbers are equal"); // if first condition met, message is displayed
+} else if (number1 != number2 && number2 != number3 && number1 != number3){ // if not, checking if 3 numbers are different
+        console.log("All numbers are different");
+} else { // if above conditions are not met then third option is displayed
+        console.log("Neither all are equal or different"); 
+}
