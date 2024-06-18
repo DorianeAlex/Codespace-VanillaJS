@@ -1,0 +1,19 @@
+/* Write a JavaScript program that accepts three numbers from the user and prints "Increasing order" if the numbers are in the increasing order, "Decreasing order" if the numbers are in the decreasing order, and "Neither increasing or decreasing order" otherwise.
+Test Data:
+Input first number: 1524
+Input second number: 2345
+Input third number: 3321
+Expected Output :
+Increasing order.
+*/
+let number1 = Number(prompt("Choose a number: ")); // asking the user to input a number using a prompt and store it as number1 and Number() makes sure the prompt stays a number
+let number2 = Number(prompt("Choose another number: ")); // asking the user to input a number using a prompt and store it as number2
+let number3 = Number(prompt("Choose a third number: ")); // asking the user to input a number using a prompt and store it as number3
+// checking the conditions with an if statement
+if (number1 < number2 && number2 < number3) { // checking if order is increasing
+        console.log("Increasing number");
+} else if (number1 > number2 && number2 > number3){ // if not checking if order is decreasing
+        console.log("Decreasing number");
+} else {
+        console.log("Neither all are equal or different"); // if above conditions are not met then 3 options is displayed
+}
